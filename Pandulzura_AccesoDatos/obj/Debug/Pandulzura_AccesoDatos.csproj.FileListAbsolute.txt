@@ -12,3 +12,10 @@ C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_AccesoDatos\obj
 C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.dll
 C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_AccesoDatos\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_AccesoDatos\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_AccesoDatos\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.pdb

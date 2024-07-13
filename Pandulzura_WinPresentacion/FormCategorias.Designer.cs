@@ -29,18 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvCategoria = new System.Windows.Forms.DataGridView();
-            this.categoria = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.agregarbt = new System.Windows.Forms.Button();
             this.limpiarbt = new System.Windows.Forms.Button();
+            this.agregarbt = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.categoria = new System.Windows.Forms.TextBox();
+            this.dgvCategoria = new System.Windows.Forms.DataGridView();
             this.listarbt = new System.Windows.Forms.Button();
-            this.idCategoria = new System.Windows.Forms.NumericUpDown();
+            this.idCategoria = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idCategoria)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -58,56 +57,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // dgvCategoria
+            // limpiarbt
             // 
-            this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategoria.Location = new System.Drawing.Point(12, 235);
-            this.dgvCategoria.Name = "dgvCategoria";
-            this.dgvCategoria.Size = new System.Drawing.Size(584, 163);
-            this.dgvCategoria.TabIndex = 1;
-            this.dgvCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellContentClick);
-            // 
-            // categoria
-            // 
-            this.categoria.Location = new System.Drawing.Point(210, 87);
-            this.categoria.Name = "categoria";
-            this.categoria.Size = new System.Drawing.Size(108, 20);
-            this.categoria.TabIndex = 0;
-            this.categoria.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(206, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "CATEGORIAS";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(75, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "ID Categoria";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(86, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Categoria";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.limpiarbt.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.limpiarbt.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiarbt.Location = new System.Drawing.Point(398, 89);
+            this.limpiarbt.Name = "limpiarbt";
+            this.limpiarbt.Size = new System.Drawing.Size(94, 26);
+            this.limpiarbt.TabIndex = 6;
+            this.limpiarbt.Text = "Limpiar";
+            this.limpiarbt.UseVisualStyleBackColor = false;
+            this.limpiarbt.Click += new System.EventHandler(this.limpiarbt_Click);
             // 
             // agregarbt
             // 
@@ -122,17 +82,56 @@
             this.agregarbt.UseVisualStyleBackColor = false;
             this.agregarbt.Click += new System.EventHandler(this.button1_Click);
             // 
-            // limpiarbt
+            // label3
             // 
-            this.limpiarbt.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.limpiarbt.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.limpiarbt.Location = new System.Drawing.Point(398, 89);
-            this.limpiarbt.Name = "limpiarbt";
-            this.limpiarbt.Size = new System.Drawing.Size(94, 26);
-            this.limpiarbt.TabIndex = 6;
-            this.limpiarbt.Text = "Limpiar";
-            this.limpiarbt.UseVisualStyleBackColor = false;
-            this.limpiarbt.Click += new System.EventHandler(this.limpiarbt_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(86, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Categoria";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(75, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 15);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "ID Categoria";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(206, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "CATEGORIAS";
+            // 
+            // categoria
+            // 
+            this.categoria.Location = new System.Drawing.Point(210, 87);
+            this.categoria.Name = "categoria";
+            this.categoria.Size = new System.Drawing.Size(108, 20);
+            this.categoria.TabIndex = 0;
+            this.categoria.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // dgvCategoria
+            // 
+            this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategoria.Location = new System.Drawing.Point(12, 235);
+            this.dgvCategoria.Name = "dgvCategoria";
+            this.dgvCategoria.Size = new System.Drawing.Size(584, 163);
+            this.dgvCategoria.TabIndex = 1;
+            this.dgvCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellContentClick);
             // 
             // listarbt
             // 
@@ -148,11 +147,10 @@
             // 
             // idCategoria
             // 
-            this.idCategoria.Location = new System.Drawing.Point(210, 47);
+            this.idCategoria.Location = new System.Drawing.Point(215, 51);
             this.idCategoria.Name = "idCategoria";
-            this.idCategoria.Size = new System.Drawing.Size(71, 20);
+            this.idCategoria.Size = new System.Drawing.Size(102, 20);
             this.idCategoria.TabIndex = 7;
-            this.idCategoria.ValueChanged += new System.EventHandler(this.idCategoria_ValueChanged);
             // 
             // FormCategorias
             // 
@@ -167,7 +165,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idCategoria)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,6 +180,6 @@
         private System.Windows.Forms.Button limpiarbt;
         private System.Windows.Forms.Button agregarbt;
         private System.Windows.Forms.Button listarbt;
-        private System.Windows.Forms.NumericUpDown idCategoria;
+        private System.Windows.Forms.TextBox idCategoria;
     }
 }

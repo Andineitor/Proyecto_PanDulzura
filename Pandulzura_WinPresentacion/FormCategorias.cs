@@ -32,7 +32,7 @@ namespace Pandulzura_WinPresentacion
         //Insertar
         public void InsertarCategoria()
         {
-            nuevaCate.IdCategoria = idCategoria.Bottom;
+            nuevaCate.IdCategoria = idCategoria.Text;
             nuevaCate.NombreCategoria = categoria.Text;
             if (cateLogica.InsertarCategoria(nuevaCate))
             {
@@ -48,7 +48,7 @@ namespace Pandulzura_WinPresentacion
         //limpiar
         private void LimpiarCampos()
         {
-            idCategoria.Value = 0;
+            idCategoria.Clear();
             categoria.Clear();
         }
 

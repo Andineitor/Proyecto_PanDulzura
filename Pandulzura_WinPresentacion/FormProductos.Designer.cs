@@ -30,14 +30,12 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.precio = new System.Windows.Forms.NumericUpDown();
-            this.categoriaid = new System.Windows.Forms.NumericUpDown();
             this.txtcate = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Limpiar = new System.Windows.Forms.Button();
             this.Listar = new System.Windows.Forms.Button();
             this.disponibilidad = new System.Windows.Forms.NumericUpDown();
             this.descripcion = new System.Windows.Forms.TextBox();
-            this.productoid = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,25 +44,25 @@
             this.agregar = new System.Windows.Forms.Button();
             this.producto = new System.Windows.Forms.TextBox();
             this.dgvProd = new System.Windows.Forms.DataGridView();
+            this.productoid = new System.Windows.Forms.TextBox();
+            this.categoriaid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.precio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriaid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disponibilidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productoid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProd)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.precio);
             this.groupBox1.Controls.Add(this.categoriaid);
+            this.groupBox1.Controls.Add(this.productoid);
+            this.groupBox1.Controls.Add(this.precio);
             this.groupBox1.Controls.Add(this.txtcate);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.Limpiar);
             this.groupBox1.Controls.Add(this.Listar);
             this.groupBox1.Controls.Add(this.disponibilidad);
             this.groupBox1.Controls.Add(this.descripcion);
-            this.groupBox1.Controls.Add(this.productoid);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -87,19 +85,12 @@
             this.precio.Size = new System.Drawing.Size(59, 20);
             this.precio.TabIndex = 16;
             // 
-            // categoriaid
-            // 
-            this.categoriaid.Location = new System.Drawing.Point(307, 64);
-            this.categoriaid.Name = "categoriaid";
-            this.categoriaid.Size = new System.Drawing.Size(59, 20);
-            this.categoriaid.TabIndex = 15;
-            // 
             // txtcate
             // 
             this.txtcate.AutoSize = true;
             this.txtcate.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcate.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.txtcate.Location = new System.Drawing.Point(205, 66);
+            this.txtcate.Location = new System.Drawing.Point(216, 66);
             this.txtcate.Name = "txtcate";
             this.txtcate.Size = new System.Drawing.Size(76, 15);
             this.txtcate.TabIndex = 14;
@@ -157,13 +148,6 @@
             this.descripcion.Name = "descripcion";
             this.descripcion.Size = new System.Drawing.Size(138, 20);
             this.descripcion.TabIndex = 8;
-            // 
-            // productoid
-            // 
-            this.productoid.Location = new System.Drawing.Point(127, 63);
-            this.productoid.Name = "productoid";
-            this.productoid.Size = new System.Drawing.Size(59, 20);
-            this.productoid.TabIndex = 7;
             // 
             // label5
             // 
@@ -251,6 +235,21 @@
             this.dgvProd.Size = new System.Drawing.Size(544, 172);
             this.dgvProd.TabIndex = 1;
             // 
+            // productoid
+            // 
+            this.productoid.Location = new System.Drawing.Point(127, 63);
+            this.productoid.Name = "productoid";
+            this.productoid.Size = new System.Drawing.Size(72, 20);
+            this.productoid.TabIndex = 17;
+            this.productoid.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // categoriaid
+            // 
+            this.categoriaid.Location = new System.Drawing.Point(307, 66);
+            this.categoriaid.Name = "categoriaid";
+            this.categoriaid.Size = new System.Drawing.Size(56, 20);
+            this.categoriaid.TabIndex = 18;
+            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,9 +263,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.precio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriaid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disponibilidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productoid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProd)).EndInit();
             this.ResumeLayout(false);
 
@@ -282,15 +279,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown productoid;
         private System.Windows.Forms.TextBox descripcion;
         private System.Windows.Forms.NumericUpDown disponibilidad;
         private System.Windows.Forms.Button Listar;
         private System.Windows.Forms.Button Limpiar;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown categoriaid;
         private System.Windows.Forms.Label txtcate;
         private System.Windows.Forms.NumericUpDown precio;
         private System.Windows.Forms.DataGridView dgvProd;
+        private System.Windows.Forms.TextBox productoid;
+        private System.Windows.Forms.TextBox categoriaid;
     }
 }

@@ -33,8 +33,7 @@ namespace Pandulzura_WinPresentacion
         //Insertar
         public void InsertarProd()
         {
-            nuevoProd.IdProd = productoid.Bottom;
-            nuevoProd.IdCategoria = categoriaid.Bottom;
+            nuevoProd.IdProd = productoid.Text;
             nuevoProd.NombreProd = producto.Text;
             nuevoProd.DescripcionProd = descripcion.Text;
             nuevoProd.PrecioProd = precio.DecimalPlaces = 2;
@@ -54,8 +53,8 @@ namespace Pandulzura_WinPresentacion
         //limpiar
         private void LimpiarCampos()
         {
-            productoid.Value = 0;
-            categoriaid.Value = 0;
+            productoid.Clear();
+            categoriaid.Clear();
             producto.Clear();
             descripcion.Clear();
             precio.Value = 0;
@@ -105,6 +104,16 @@ namespace Pandulzura_WinPresentacion
         private void Listar_Click(object sender, EventArgs e)
         {
             ListarProd();
+        }
+
+        private void categoriaid_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

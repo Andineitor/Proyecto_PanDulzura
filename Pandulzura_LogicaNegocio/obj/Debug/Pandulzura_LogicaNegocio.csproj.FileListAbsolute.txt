@@ -20,3 +20,14 @@ C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_LogicaNegocio\o
 C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.csproj.CopyComplete
 C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.dll
 C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_LogicaNegocio.dll.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.csproj.CopyComplete
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.pdb

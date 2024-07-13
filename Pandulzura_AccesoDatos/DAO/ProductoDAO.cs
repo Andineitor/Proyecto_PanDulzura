@@ -21,7 +21,7 @@ namespace Pandulzura_AccesoDatos.DAO
             ejecutarSql.Connection = conexion.AbrirConexion();
             try
             {
-                ejecutarSql.CommandText = "insert into productos(producto_id, categoria_id, nombre_prod, descripcion_prod, precio_prod, disponibilidad_prod)" + "values('" + nuevoProducto.IdProd + "','" + nuevoProducto.IdCategoria + "','" + nuevoProducto.NombreProd + "','" + nuevoProducto.DescripcionProd + "','" + nuevoProducto.PrecioProd + "','" + nuevoProducto.DisponibilidadProd + "')";
+                ejecutarSql.CommandText = "insert into productos( producto_id, nombre_product, descripcion_product, precio_product, disponibilidad_product)" + "values('" + nuevoProducto.IdProd + "','" + nuevoProducto.NombreProd + "','" + nuevoProducto.DescripcionProd + "','" + nuevoProducto.PrecioProd + "','" + nuevoProducto.DisponibilidadProd + "')";
                 ejecutarSql.ExecuteNonQuery();
                 conexion.CerrarConexion();
             }
@@ -41,7 +41,7 @@ namespace Pandulzura_AccesoDatos.DAO
                 ejecutarSql.Connection = conexion.AbrirConexion();
 
                 //sacar la inf
-                ejecutarSql.CommandText = "Select producto_id, categoria_id, nombre_prod, descripcion_prod, precio_prod, disponibilidad_prod from productos";
+                ejecutarSql.CommandText = "Select producto_id, categoria_id, nombre_product, descripcion_product, precio_product, disponibilidad_product from productos";
                 transaccion = ejecutarSql.ExecuteReader();
 
                 // almacenar resultado de la query

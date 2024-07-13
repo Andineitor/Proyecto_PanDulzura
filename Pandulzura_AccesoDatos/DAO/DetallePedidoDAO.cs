@@ -9,30 +9,30 @@ using System.Threading.Tasks;
 
 namespace Pandulzura_AccesoDatos.DAO
 {
-    public class CategoriaDAO
+    public class DetallePedidoDAO
     {
         private ConexionBD conexion = new ConexionBD();
         SqlCommand ejecutarSql = new SqlCommand();
         SqlDataReader transaccion;
 
         //crud
-        public void InsertarCategoria(Categoria nuevaCategoria)
+        public void InsertarDetalle(DetallePedido nuevoDetalle)
         {
             ejecutarSql.Connection = conexion.AbrirConexion();
             try
             {
-                ejecutarSql.CommandText = "insert into categoria(categoria_id, nombre_categoria)" + "values('" + nuevaCategoria.IdCategoria + "','" + nuevaCategoria.NombreCategoria + "')";
+                ejecutarSql.CommandText = "insert into detalle_pedidos(detalle_pedido_id, cantidad_pedido)" + "values('" + nuevoDetalle.IdDetalle + "','" + nuevoDetalle.CantidadPedido + "')";
                 ejecutarSql.ExecuteNonQuery();
                 conexion.CerrarConexion();
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al insertar categoria: " + ex.Message);
+                throw new Exception("Error al insertar detalles de pedido: " + ex.Message);
             }
         }
 
         //lista
-        public DataTable ListarCategoria()
+        public DataTable ListarDetalle()
         {
             DataTable dt = new DataTable();
             try
@@ -41,7 +41,7 @@ namespace Pandulzura_AccesoDatos.DAO
                 ejecutarSql.Connection = conexion.AbrirConexion();
 
                 //sacar la inf
-                ejecutarSql.CommandText = "Select categoria_id, nombre_categoria from categoria";
+                ejecutarSql.CommandText = "Select detalle_pedido_id, cantidad_pedido from detalle_pedidos";
                 transaccion = ejecutarSql.ExecuteReader();
 
                 // almacenar resultado de la query
@@ -53,7 +53,7 @@ namespace Pandulzura_AccesoDatos.DAO
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al listar categorias: " + ex.Message);
+                throw new Exception("Error al listar detalles de pedido: " + ex.Message);
             }
         }
     }
